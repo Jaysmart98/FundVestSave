@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 
@@ -79,10 +80,10 @@ const Home = () => {
             </h4>
             <div className="d-flex flex-column flex-sm-row justify-content-center gap-3 mb-5">
               <button className="btn btn-light text-primary fw-bold py-3 px-5 rounded-pill shadow-lg border-0 transition">
-                Start Investing
+                <Link className="text-decoration-none" to="/investment">Start Investing</Link>
               </button>
               <button className="btn btn-outline-light fw-bold py-3 px-5 rounded-pill transition">
-                Contact Us
+                <Link className="text-decoration-none"  to="/contact">Contact Us</Link> 
               </button>
             </div>
             
@@ -122,10 +123,10 @@ const Home = () => {
 
           <div className="row g-4">
             {[
-              { icon: <TrendingUp size={32} />, title: "Investments", desc: "Access stock markets, crypto, and forex with professional-grade trading tools." },
-              { icon: <Shield size={32} />, title: "Fund Recovery", desc: "Expert assistance in recovering funds from fraudulent schemes and lost wallets." },
-              { icon: <Landmark size={32} />, title: "Loan Services", desc: "Flexible financing options tailored for both personal and business growth." },
-              { icon: <Briefcase size={32} />, title: "Careers", desc: "Join our global team and build a rewarding career in the evolving financial sector." }
+              { icon: <TrendingUp size={32} />, title: "Investments", desc: "Access stock markets, crypto, and forex with professional-grade trading tools.", link: "/investment"  },
+              { icon: <Shield size={32} />, title: "Fund Recovery", desc: "Expert assistance in recovering funds from fraudulent schemes and lost wallets.", link: "/recovery"  },
+              { icon: <Landmark size={32} />, title: "Loan Services", desc: "Flexible financing options tailored for both personal and business growth.", link: "/loan" },
+              { icon: <Briefcase size={32} />, title: "Careers", desc: "Join our global team and build a rewarding career in the evolving financial sector.", link: "/career"  }
             ].map((s, i) => (
               <div key={i} className="col-md-6 col-lg-3">
                 <div className="service-card bg-white">
@@ -134,8 +135,15 @@ const Home = () => {
                   </div>
                   <h3 className="h5 fw-bold mb-3">{s.title}</h3>
                   <p className="text-muted mb-4 small lh-base">{s.desc}</p>
-                  <a href="#" className="text-primary fw-bold text-decoration-none small d-flex align-items-center">
-                    Learn More <span className="ms-1">→</span>
+                  <a 
+                  href={s.link}
+                   className="text-primary fw-bold text-decoration-none small d-flex align-items-center">
+                    Learn More
+
+                    <span 
+                    className="ms-1">
+                      →
+                      </span>
                   </a>
                 </div>
               </div>

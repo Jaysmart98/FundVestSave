@@ -6,6 +6,8 @@ import Recovery from './Pages/Scam Recovery/Recovery.jsx';
 import Loan from './Pages/Loans/Loan.jsx';
 import Career from './Pages/Career/Career.jsx';
 import FAQ from './Pages/FAQ/FAQ.jsx';
+import Legal from './Pages/Legal/Legal.jsx';
+import Contact from './Pages/Contact/Contact.jsx';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -22,6 +24,8 @@ function App() {
         <Route path="/loan" element={<Loan />} />
         <Route path="/career" element={<Career />} />
         <Route path="/faq" element={<FAQ />} />
+        <Route path="/legal" element={<Legal />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   );

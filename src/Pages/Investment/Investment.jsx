@@ -110,23 +110,22 @@ const Investment = () => {
             <h2 className="fw-bold">Start Your Journey</h2>
             <p className="text-muted">Complete the application below and our team will contact you.</p>
           </div>
-
           <form className="bg-white p-4 p-md-5 rounded shadow-sm border border-2 form-container-hover">
             <div className="row g-4">
               <div className="col-md-6">
-                <label className="custom-label">full name</label>
+                <label className="custom-label">Full Name</label>
                 <input type="text" className="form-control form-control-lg custom-input" required />
               </div>
               <div className="col-md-6">
-                <label className="custom-label">email address</label>
+                <label className="custom-label">Email Address</label>
                 <input type="email" className="form-control form-control-lg custom-input" required />
               </div>
               <div className="col-md-6">
-                <label className="custom-label">phone number</label>
+                <label className="custom-label">Phone Number</label>
                 <input type="number" className="form-control form-control-lg custom-input" required />
               </div>
               <div className="col-md-6">
-                <label className="custom-label">investment type</label>
+                <label className="custom-label">Investment Type</label>
                 <select className="form-select form-select-lg custom-input" defaultValue="">
                   <option value="" disabled className="d-none">Select investment type</option>
                   <option>Stock Trading</option>

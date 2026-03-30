@@ -22,29 +22,29 @@ const Footer = () => {
             <p className="small text-secondary" style={{ lineHeight: '1.7' }}>
               Your trusted partner for investments, recovery services, loans, and career opportunities.
             </p>
-            <div className="d-flex gap-3 mt-4 justify-content-center justify-content-md-start">
+            {/* <div className="d-flex gap-3 mt-4 justify-content-center justify-content-md-start">
               <a href="#" className="text-secondary hover-white"><Facebook size={20} /></a>
               <a href="#" className="text-secondary hover-white"><Twitter size={20} /></a>
               <a href="#" className="text-secondary hover-white"><Linkedin size={20} /></a>
-            </div>
+            </div> */}
           </div>
 
           <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
             <h5 className="text-uppercase mb-4 fw-bold small">Quick Links</h5>
             <ul className="list-unstyled">
-              <li className="mb-2"><a href="#" className="text-secondary text-decoration-none small hover-underline">About Us</a></li>
-              <li className="mb-2"><a href="#" className="text-secondary text-decoration-none small hover-underline">Investment</a></li>
-              <li className="mb-2"><a href="#" className="text-secondary text-decoration-none small hover-underline">Scam Recovery</a></li>
-              <li className="mb-2"><a href="#" className="text-secondary text-decoration-none small hover-underline">Career</a></li>
+              <li className="mb-2"><a href="/about" className="text-secondary text-decoration-none small hover-underline">About Us</a></li>
+              <li className="mb-2"><a href="/investment" className="text-secondary text-decoration-none small hover-underline">Investment</a></li>
+              <li className="mb-2"><a href="/recovery" className="text-secondary text-decoration-none small hover-underline">Scam Recovery</a></li>
+              <li className="mb-2"><a href="/career" className="text-secondary text-decoration-none small hover-underline">Career</a></li>
             </ul>
           </div>
 
           <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
             <h5 className="text-uppercase mb-4 fw-bold small">Legal</h5>
             <ul className="list-unstyled">
-              <li className="mb-2"><a href="#" className="text-secondary text-decoration-none small hover-underline">Terms & Conditions</a></li>
-              <li className="mb-2"><a href="#" className="text-secondary text-decoration-none small hover-underline">Privacy Policy</a></li>
-              <li className="mb-2"><a href="#" className="text-secondary text-decoration-none small hover-underline">Risk Disclosure</a></li>
+              <li className="mb-2"><a href="/legal" className="text-secondary text-decoration-none small hover-underline">Terms & Conditions</a></li>
+              <li className="mb-2"><a href="/legal" className="text-secondary text-decoration-none small hover-underline">Privacy Policy</a></li>
+              <li className="mb-2"><a href="/legal" className="text-secondary text-decoration-none small hover-underline">Risk Disclosure</a></li>
             </ul>
           </div>
 
